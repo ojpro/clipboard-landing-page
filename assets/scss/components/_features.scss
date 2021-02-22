@@ -1,0 +1,27 @@
+.features ,.other_features{
+  margin-top: 2rem;
+  padding: 16px;
+  position: relative;
+  .desc {
+    @extend %desc;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    @media (max-width: 920px) {
+      grid-template-columns: 1fr;
+      .screenshout {
+        display: flex;
+        justify-content: center;
+      }
+      .features {
+        @extend %default-flex;
+        .__feature{
+          max-width:360px;
+        }
+
+      }
+    }
+  }
+}

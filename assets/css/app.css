@@ -1,0 +1,228 @@
+.spacer > * + * {
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.features .desc, .other_features .desc, .download .desc {
+  display: block;
+  width: 60%;
+  margin: 4rem auto;
+  text-align: center;
+}
+@media (max-width: 920px) {
+  .features .desc, .other_features .desc, .download .desc {
+    width: 96%;
+  }
+}
+
+.btn_cyan, header .header_content .download_buttons .btn_ios, .download_buttons .btn_ios {
+  background-color: #26baa4;
+}
+.btn_cyan:hover, header .header_content .download_buttons .btn_ios:hover, .download_buttons .btn_ios:hover {
+  box-shadow: 0 2px 6px #26baa4;
+}
+
+.btn_blue, header .header_content .download_buttons .btn_mac, .download_buttons .btn_mac {
+  background-color: #6173ff;
+}
+.btn_blue:hover, header .header_content .download_buttons .btn_mac:hover, .download_buttons .btn_mac:hover {
+  box-shadow: 0 2px 6px #6173ff;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Rubik;
+  color: #9fabb2;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: #4c545d;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 400;
+}
+
+header {
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  height: 60vh;
+}
+@media (max-width: 920px) {
+  header {
+    height: 100vh;
+    background-image: url("../images/bg-header-mobile.png");
+  }
+}
+header .header_content {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+header .header_content img {
+  width: 64px;
+  height: 64px;
+}
+header .header_content h1 {
+  color: #4c545d;
+}
+header .header_content > p {
+  color: #9fabb2;
+}
+header .header_content .download_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+}
+header .header_content .download_buttons .btn {
+  box-shadow: 0 2px 6px transparent;
+}
+
+.features, .other_features {
+  margin-top: 2rem;
+  padding: 16px;
+  position: relative;
+}
+.features .details, .other_features .details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+@media (max-width: 920px) {
+  .features .details, .other_features .details {
+    grid-template-columns: 1fr;
+  }
+  .features .details .screenshout, .other_features .details .screenshout {
+    display: flex;
+    justify-content: center;
+  }
+  .features .details .features, .other_features .details .features {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .features .details .features .__feature, .other_features .details .features .__feature {
+    max-width: 360px;
+  }
+}
+
+.advantage {
+  text-align: center;
+}
+.advantage .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+.advantage .boxes .box {
+  width: 260px;
+  margin: 16px;
+}
+
+.sponsers ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  text-align: left;
+}
+.sponsers ul li {
+  width: max-content;
+  margin: 2.5rem;
+}
+
+.download {
+  text-align: center;
+}
+@media (max-width: 390px) {
+  .download_buttons .btn {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+
+footer {
+  background-color: rgba(159, 171, 178, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media (max-width: 920px) {
+  footer {
+    flex-direction: column;
+  }
+}
+footer .logo {
+  text-align: center;
+}
+footer .logo img {
+  display: block;
+  width: 54px;
+  height: 54px;
+  margin: 20px auto;
+}
+footer .links {
+  min-width: max-content;
+  padding: 16px;
+}
+footer .links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem;
+}
+@media (max-width: 390px) {
+  footer .links ul {
+    flex-direction: column;
+  }
+}
+footer .links ul li {
+  margin: 8px;
+}
+footer .links ul li a {
+  color: #4c545d;
+}
+footer .links ul li a:hover {
+  color: #9fabb2;
+  transition: color 250ms ease-in-out;
+}
+footer .social__links .container {
+  text-align: center;
+  margin: 32px auto;
+}
+footer .social__links .container a {
+  margin: 8px;
+}
+
+/*# sourceMappingURL=app.css.map */

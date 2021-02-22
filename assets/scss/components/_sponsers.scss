@@ -1,0 +1,14 @@
+.sponsers{
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: left;
+    li{
+      width: max-content;
+      margin: 2.5rem;
+    }
+  }
+}

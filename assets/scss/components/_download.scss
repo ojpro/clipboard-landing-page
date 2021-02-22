@@ -1,0 +1,20 @@
+.download{
+  text-align: center;
+  .desc{
+    @extend %desc;
+  }
+  &_buttons{
+    .btn{
+      @media (max-width:390px) {
+        display: inline-block;
+        margin: 8px;
+      }
+      &_ios{
+        @extend .btn_cyan;
+      }
+      &_mac{
+        @extend .btn_blue;
+      }
+    }
+  }
+}

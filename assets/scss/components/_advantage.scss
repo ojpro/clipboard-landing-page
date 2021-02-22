@@ -1,0 +1,10 @@
+.advantage{
+  text-align: center;
+  .boxes{
+    @extend %default-flex;
+    .box{
+      width: 260px;
+      margin: 16px;
+    }
+  }
+}
